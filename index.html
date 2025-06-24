@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>niggerware.lol</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+@keyframes bgLerp {
+  0%   { background-color: #000000; } /* black */
+  50%  { background-color: #140014; } /* purple */
+  100% { background-color: #000000; } /* black again */
+}
+    html, body {
+      scroll-behavior: smooth;
+      height: 100%;
+      background-color: hwb(297 0% 83%);
+      background-image: url("Galaxy.gif");
+      background-size:cover;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      animation: bgLerp 10s ease-in-out infinite;
+    }
+
+
+    section {
+  min-height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #e0e0e0;
+    }
+
+    .category {
+      background: #000000;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .rgb-button {
+      font-size: 32px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+.rgb-corner {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 999;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  gap: 1px;
+}
+    .rgb-letter {
+      animation: rgbText 3s infinite linear;
+      font-weight: bold;
+    }
+
+    .rgb-letter:nth-child(1) { animation-delay: 0s; }
+    .rgb-letter:nth-child(2) { animation-delay: 0.1s; }
+    .rgb-letter:nth-child(3) { animation-delay: 0.2s; }
+    .rgb-letter:nth-child(4) { animation-delay: 0.3s; }
+    .rgb-letter:nth-child(5) { animation-delay: 0.4s; }
+    .rgb-letter:nth-child(6) { animation-delay: 0.5s; }
+    .rgb-letter:nth-child(7) { animation-delay: 0.6s; }
+
+    @keyframes rgbText {
+      0% { color: red; }
+      16% { color: orange; }
+      33% { color: yellow; }
+      50% { color: green; }
+      66% { color: cyan; }
+      83% { color: blue; }
+      100% { color: violet; }
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: #2a003d;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
+    .subsection-title {
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section id="Niggerware.lol">
+    <div class="category">
+      <h1>Niggerware.lol</h1>
+      <button class = "rgb-button" onclick="window.open('https://discord.gg/seuDz3JsYQ')">
+        <span class="rgb-letter">D</span>
+        <span class="rgb-letter">i</span>
+        <span class="rgb-letter">s</span>
+        <span class="rgb-letter">c</span>
+        <span class="rgb-letter">o</span>
+        <span class="rgb-letter">r</span>
+        <span class="rgb-letter">d</span>
+      </button>
+    </div>
+    <div class="rgb-corner">
+  <span class="rgb-letter">N</span>
+  <span class="rgb-letter">I</span>
+  <span class="rgb-letter">G</span>
+  <span class="rgb-letter">G</span>
+  <span class="rgb-letter">E</span>
+  <span class="rgb-letter">R</span>
+  <span class="rgb-letter">W</span>
+  <span class="rgb-letter">A</span>
+  <span class="rgb-letter">R</span>
+  <span class="rgb-letter">E</span>
+</div>
+  </section>
+   <section id="Aboutus">
+    <div>
+        <h2>
+            Niggerware.lol is a private discord server, we provide software and other tools. It's a group of people with skills such as reverse engeneering and programming.
+        </h2>
+    </div>
+  </section>
+</body>
+</html>
