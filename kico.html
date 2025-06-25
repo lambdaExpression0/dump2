@@ -20,10 +20,12 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       overflow-x: hidden;
       animation: bgLerp 10s ease-in-out infinite;
+      filter: blur(10px); /* Apply initial blur to the whole page */
+      transition: filter 0.3s ease; /* Smooth transition for unblur effect */
     }
 
     section {
-      min-height: auto; 
+      min-height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -60,11 +62,11 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      background-image: url('Kico.png'); 
+      background-image: url('Kico.png');
       background-size: cover;
       background-position: center;
       position: absolute;
-      top: -75px; 
+      top: -75px;
       z-index: 1;
       border: 5px solid #fff;
     }
@@ -147,6 +149,7 @@
       margin-top: 40px;
       font-size: 2rem;
     }
+
   </style>
 </head>
 <body>
@@ -155,12 +158,22 @@
     <div class="category">
       <div class="profile-picture"></div>
       <h2>Hi im Kico :3</h2>
-      <audio controls>
-      <source src="luv.mp3" type="audio/mp3">
-      Your Browser does not support audio element.
+      <audio id="audio" controls>
+        <source src="luv.mp3" type="audio/mp3">
+        Your Browser does not support audio element.
       </audio>
     </div>
   </section>
+
+  <script>
+    document.body.addEventListener('click', function() {
+      document.documentElement.style.filter = 'none'; 
+      document.body.style.filter = 'none';
+
+      var audio = document.getElementById('audio');
+      audio.play();
+    });
+  </script>
 
 </body>
 </html>
